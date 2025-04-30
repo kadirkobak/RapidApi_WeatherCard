@@ -38,6 +38,9 @@
             label7 = new Label();
             label8 = new Label();
             label9 = new Label();
+            label10 = new Label();
+            label11 = new Label();
+            label12 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -123,7 +126,7 @@
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
             label7.ForeColor = SystemColors.ControlLightLight;
-            label7.Location = new Point(40, 337);
+            label7.Location = new Point(74, 347);
             label7.Name = "label7";
             label7.Size = new Size(67, 28);
             label7.TabIndex = 7;
@@ -145,11 +148,44 @@
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
             label9.ForeColor = SystemColors.ControlLightLight;
-            label9.Location = new Point(40, 415);
+            label9.Location = new Point(25, 403);
             label9.Name = "label9";
             label9.Size = new Size(117, 28);
             label9.TabIndex = 9;
             label9.Text = "Fahrenheit:";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            label10.ForeColor = SystemColors.ControlLightLight;
+            label10.Location = new Point(147, 347);
+            label10.Name = "label10";
+            label10.Size = new Size(36, 28);
+            label10.TabIndex = 10;
+            label10.Text = "00";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            label11.ForeColor = SystemColors.ControlLightLight;
+            label11.Location = new Point(147, 375);
+            label11.Name = "label11";
+            label11.Size = new Size(36, 28);
+            label11.TabIndex = 11;
+            label11.Text = "00";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            label12.ForeColor = SystemColors.ControlLightLight;
+            label12.Location = new Point(147, 403);
+            label12.Name = "label12";
+            label12.Size = new Size(36, 28);
+            label12.TabIndex = 12;
+            label12.Text = "00";
             // 
             // Form1
             // 
@@ -157,6 +193,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.CadetBlue;
             ClientSize = new Size(476, 466);
+            Controls.Add(label12);
+            Controls.Add(label11);
+            Controls.Add(label10);
             Controls.Add(label9);
             Controls.Add(label8);
             Controls.Add(label7);
@@ -188,5 +227,8 @@
         private Label label7;
         private Label label8;
         private Label label9;
+        private Label label10;
+        private Label label11;
+        private Label label12;
     }
 }
