@@ -48,10 +48,12 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.BackColor = Color.LemonChiffon;
-            pictureBox1.Location = new Point(140, 271);
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.Image = Properties.Resources.sunny;
+            pictureBox1.Location = new Point(21, 191);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(125, 62);
+            pictureBox1.Size = new Size(120, 110);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
@@ -60,7 +62,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 162);
             label2.ForeColor = SystemColors.ControlLightLight;
-            label2.Location = new Point(12, 63);
+            label2.Location = new Point(12, 81);
             label2.Name = "label2";
             label2.Size = new Size(187, 41);
             label2.TabIndex = 2;
@@ -71,7 +73,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 162);
             label3.ForeColor = SystemColors.ControlLightLight;
-            label3.Location = new Point(21, 122);
+            label3.Location = new Point(21, 137);
             label3.Name = "label3";
             label3.Size = new Size(77, 31);
             label3.TabIndex = 3;
