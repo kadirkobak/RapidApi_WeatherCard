@@ -32,6 +32,12 @@
             pictureBox1 = new PictureBox();
             label2 = new Label();
             label3 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            label7 = new Label();
+            label8 = new Label();
+            label9 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -62,7 +68,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 162);
             label2.ForeColor = SystemColors.ControlLightLight;
-            label2.Location = new Point(12, 81);
+            label2.Location = new Point(12, 75);
             label2.Name = "label2";
             label2.Size = new Size(187, 41);
             label2.TabIndex = 2;
@@ -79,12 +85,84 @@
             label3.TabIndex = 3;
             label3.Text = "Today";
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            label4.ForeColor = SystemColors.ControlLightLight;
+            label4.Location = new Point(202, 278);
+            label4.Name = "label4";
+            label4.Size = new Size(57, 23);
+            label4.TabIndex = 4;
+            label4.Text = "Today";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            label5.ForeColor = SystemColors.ControlLightLight;
+            label5.Location = new Point(195, 191);
+            label5.Name = "label5";
+            label5.Size = new Size(191, 81);
+            label5.TabIndex = 5;
+            label5.Text = "00.00";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            label6.ForeColor = SystemColors.ControlLightLight;
+            label6.Location = new Point(365, 191);
+            label6.Name = "label6";
+            label6.Size = new Size(21, 23);
+            label6.TabIndex = 6;
+            label6.Text = "C";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            label7.ForeColor = SystemColors.ControlLightLight;
+            label7.Location = new Point(40, 337);
+            label7.Name = "label7";
+            label7.Size = new Size(67, 28);
+            label7.TabIndex = 7;
+            label7.Text = "Wind:";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            label8.ForeColor = SystemColors.ControlLightLight;
+            label8.Location = new Point(40, 375);
+            label8.Name = "label8";
+            label8.Size = new Size(102, 28);
+            label8.TabIndex = 8;
+            label8.Text = "Moisture:";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            label9.ForeColor = SystemColors.ControlLightLight;
+            label9.Location = new Point(40, 415);
+            label9.Name = "label9";
+            label9.Size = new Size(117, 28);
+            label9.TabIndex = 9;
+            label9.Text = "Fahrenheit:";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.CadetBlue;
             ClientSize = new Size(476, 466);
+            Controls.Add(label9);
+            Controls.Add(label8);
+            Controls.Add(label7);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(pictureBox1);
@@ -104,5 +182,11 @@
         private PictureBox pictureBox1;
         private Label label2;
         private Label label3;
+        private Label label4;
+        private Label label5;
+        private Label label6;
+        private Label label7;
+        private Label label8;
+        private Label label9;
     }
 }
