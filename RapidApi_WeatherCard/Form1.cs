@@ -17,7 +17,7 @@ namespace RapidApi_WeatherCard
             var request = new HttpRequestMessage
             {
                 Method = HttpMethod.Get,
-                RequestUri = new Uri("https://open-weather13.p.rapidapi.com/city/konya/EN"),
+                RequestUri = new Uri("https://open-weather13.p.rapidapi.com/city/manisa/EN"),
                 Headers =
     {
         { "x-rapidapi-key", "ee46bfe5f8msh9847dc72b78f403p12245cjsn61d2010bb2e7" },
@@ -40,6 +40,7 @@ namespace RapidApi_WeatherCard
                 decimal celcius = (decimal.Parse(fahrenheit) - 32) * 5 / 9;
                 lblCelcius.Text = celcius.ToString("00.00");
 
+                
 
                 switch (weatherSituation)
                 {
@@ -51,6 +52,9 @@ namespace RapidApi_WeatherCard
                         break;
                     case "Rain":
                         weatherImage.Image = Properties.Resources.rainy;
+                        break;
+                    case "Snow":
+                        weatherImage.Image = Properties.Resources.snowy;
                         break;
                     default:
                         weatherImage.Image = Properties.Resources.sunny;
