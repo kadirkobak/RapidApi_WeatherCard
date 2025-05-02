@@ -29,13 +29,14 @@ namespace RapidApi_WeatherCard
                 response.EnsureSuccessStatusCode();
                 var body = await response.Content.ReadAsStringAsync();
                 var json = JObject.Parse(body);
-                var value = json["main"]["feels_like"].ToString();
+                var fahrenheit = json["main"]["feels_like"].ToString();
                 var windSpeed = json["wind"]["speed"].ToString();
                 var humidity = json["main"]["humidity"].ToString();
-                lblFahrenheit.Text = value;
+                lblFahrenheit.Text = fahrenheit;
                 lblWindSpeed.Text = windSpeed;
                 lblHumidity.Text = humidity;
-
+                decimal celcius = (decimal.Parse(fahrenheit) - 32) * 5 / 9;
+                lblCelcius.Text = celcius.ToString("00.00");
 
 
             }

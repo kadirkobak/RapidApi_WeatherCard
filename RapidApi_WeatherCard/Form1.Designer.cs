@@ -33,7 +33,7 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            label5 = new Label();
+            lblCelcius = new Label();
             label6 = new Label();
             label7 = new Label();
             label8 = new Label();
@@ -99,16 +99,16 @@
             label4.TabIndex = 4;
             label4.Text = "Today";
             // 
-            // label5
+            // lblCelcius
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            label5.ForeColor = SystemColors.ControlLightLight;
-            label5.Location = new Point(195, 191);
-            label5.Name = "label5";
-            label5.Size = new Size(191, 81);
-            label5.TabIndex = 5;
-            label5.Text = "00.00";
+            lblCelcius.AutoSize = true;
+            lblCelcius.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            lblCelcius.ForeColor = SystemColors.ControlLightLight;
+            lblCelcius.Location = new Point(195, 191);
+            lblCelcius.Name = "lblCelcius";
+            lblCelcius.Size = new Size(191, 81);
+            lblCelcius.TabIndex = 5;
+            lblCelcius.Text = "00.00";
             // 
             // label6
             // 
@@ -200,7 +200,7 @@
             Controls.Add(label8);
             Controls.Add(label7);
             Controls.Add(label6);
-            Controls.Add(label5);
+            Controls.Add(lblCelcius);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -223,7 +223,7 @@
         private Label label2;
         private Label label3;
         private Label label4;
-        private Label label5;
+        private Label lblCelcius;
         private Label label6;
         private Label label7;
         private Label label8;
