@@ -51,9 +51,9 @@
             label1.ForeColor = SystemColors.ControlLightLight;
             label1.Location = new Point(12, 9);
             label1.Name = "label1";
-            label1.Size = new Size(247, 54);
+            label1.Size = new Size(229, 54);
             label1.TabIndex = 0;
-            label1.Text = "İstanbul, TR";
+            label1.Text = "Manisa, TR";
             // 
             // weatherImage
             // 
@@ -73,9 +73,9 @@
             label2.ForeColor = SystemColors.ControlLightLight;
             label2.Location = new Point(12, 75);
             label2.Name = "label2";
-            label2.Size = new Size(187, 41);
+            label2.Size = new Size(173, 41);
             label2.TabIndex = 2;
-            label2.Text = "İstanbul, TR";
+            label2.Text = "Manisa, TR";
             // 
             // label3
             // 
