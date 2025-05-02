@@ -38,8 +38,8 @@
             label7 = new Label();
             label8 = new Label();
             label9 = new Label();
-            label10 = new Label();
             lblWindSpeed = new Label();
+            lblHumidity = new Label();
             lblFahrenheit = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -139,9 +139,9 @@
             label8.ForeColor = SystemColors.ControlLightLight;
             label8.Location = new Point(40, 375);
             label8.Name = "label8";
-            label8.Size = new Size(102, 28);
+            label8.Size = new Size(105, 28);
             label8.TabIndex = 8;
-            label8.Text = "Moisture:";
+            label8.Text = "Humidity:";
             // 
             // label9
             // 
@@ -154,27 +154,27 @@
             label9.TabIndex = 9;
             label9.Text = "Fahrenheit:";
             // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            label10.ForeColor = SystemColors.ControlLightLight;
-            label10.Location = new Point(147, 347);
-            label10.Name = "label10";
-            label10.Size = new Size(36, 28);
-            label10.TabIndex = 10;
-            label10.Text = "00";
-            // 
             // lblWindSpeed
             // 
             lblWindSpeed.AutoSize = true;
             lblWindSpeed.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
             lblWindSpeed.ForeColor = SystemColors.ControlLightLight;
-            lblWindSpeed.Location = new Point(147, 375);
+            lblWindSpeed.Location = new Point(147, 347);
             lblWindSpeed.Name = "lblWindSpeed";
             lblWindSpeed.Size = new Size(36, 28);
-            lblWindSpeed.TabIndex = 11;
+            lblWindSpeed.TabIndex = 10;
             lblWindSpeed.Text = "00";
+            // 
+            // lblHumidity
+            // 
+            lblHumidity.AutoSize = true;
+            lblHumidity.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            lblHumidity.ForeColor = SystemColors.ControlLightLight;
+            lblHumidity.Location = new Point(147, 375);
+            lblHumidity.Name = "lblHumidity";
+            lblHumidity.Size = new Size(36, 28);
+            lblHumidity.TabIndex = 11;
+            lblHumidity.Text = "00";
             // 
             // lblFahrenheit
             // 
@@ -194,8 +194,8 @@
             BackColor = Color.CadetBlue;
             ClientSize = new Size(476, 466);
             Controls.Add(lblFahrenheit);
+            Controls.Add(lblHumidity);
             Controls.Add(lblWindSpeed);
-            Controls.Add(label10);
             Controls.Add(label9);
             Controls.Add(label8);
             Controls.Add(label7);
@@ -228,8 +228,8 @@
         private Label label7;
         private Label label8;
         private Label label9;
-        private Label label10;
         private Label lblWindSpeed;
+        private Label lblHumidity;
         private Label lblFahrenheit;
     }
 }

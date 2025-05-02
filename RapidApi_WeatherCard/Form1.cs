@@ -31,8 +31,11 @@ namespace RapidApi_WeatherCard
                 var json = JObject.Parse(body);
                 var value = json["main"]["feels_like"].ToString();
                 var windSpeed = json["wind"]["speed"].ToString();
+                var humidity = json["main"]["humidity"].ToString();
                 lblFahrenheit.Text = value;
                 lblWindSpeed.Text = windSpeed;
+                lblHumidity.Text = humidity;
+
 
 
             }
