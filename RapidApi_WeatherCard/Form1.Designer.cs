@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            pictureBox1 = new PictureBox();
+            weatherImage = new PictureBox();
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
@@ -41,7 +41,7 @@
             lblWindSpeed = new Label();
             lblHumidity = new Label();
             lblFahrenheit = new Label();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)weatherImage).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -55,16 +55,16 @@
             label1.TabIndex = 0;
             label1.Text = "İstanbul, TR";
             // 
-            // pictureBox1
+            // weatherImage
             // 
-            pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.Image = Properties.Resources.sunny;
-            pictureBox1.Location = new Point(21, 191);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(120, 110);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
+            weatherImage.BackColor = Color.Transparent;
+            weatherImage.Image = Properties.Resources.sunny;
+            weatherImage.Location = new Point(21, 191);
+            weatherImage.Name = "weatherImage";
+            weatherImage.Size = new Size(120, 110);
+            weatherImage.SizeMode = PictureBoxSizeMode.StretchImage;
+            weatherImage.TabIndex = 1;
+            weatherImage.TabStop = false;
             // 
             // label2
             // 
@@ -204,14 +204,14 @@
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
-            Controls.Add(pictureBox1);
+            Controls.Add(weatherImage);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             Load += Form1_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)weatherImage).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -219,7 +219,7 @@
         #endregion
 
         private Label label1;
-        private PictureBox pictureBox1;
+        private PictureBox weatherImage;
         private Label label2;
         private Label label3;
         private Label label4;
